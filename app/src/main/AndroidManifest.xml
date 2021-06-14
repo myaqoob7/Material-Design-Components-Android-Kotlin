@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zekab.mdccomponents">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MDCComponents">
+        <activity
+            android:name=".DialogActivity"
+            android:label="Material Dialog"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DraggableCardViewActivity"
+            android:label="Draggable CardView"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CardViewActivity"
+            android:label="Material CardView"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CheckBoxActivity"
+            android:label="Material Checkbox"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ToggleButtonIconActivity"
+            android:label="Toggle Button Icon"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ToggleButtonActivity"
+            android:label="Material Toggle Button"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MaterialButtonActivity"
+            android:label="Material Button"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

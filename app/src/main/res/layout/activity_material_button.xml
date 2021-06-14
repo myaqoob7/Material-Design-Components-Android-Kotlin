@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaterialButtonActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                app:icon="@android:drawable/ic_btn_speak_now"
+                android:text="Text Button"
+                android:onClick="onClickMethod"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn_outlined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                app:icon="@android:drawable/ic_lock_idle_alarm"
+                app:strokeWidth="3dp"
+                app:strokeColor="#e45762"
+                android:text="Outlined Button"
+                android:onClick="onClickMethod"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn_contained"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                app:icon="@android:drawable/ic_input_add"
+                android:onClick="onClickMethod"
+                android:text="Contained Button"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn_customised1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyCustomizedButton1"
+                app:icon="@android:drawable/ic_popup_reminder"
+                android:onClick="onClickMethod"
+                android:text="Customised Button 1"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn_customised2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyCustomizedButton2"
+                android:onClick="onClickMethod"
+                android:text="Customized Button 2"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
